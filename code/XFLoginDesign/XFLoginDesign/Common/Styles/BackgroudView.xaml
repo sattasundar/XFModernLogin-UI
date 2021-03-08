@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFLoginDesign.Common.Styles.BackgroudView">
+    <ContentView.Content>
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand" Margin="0,-30,0,0">
+               <Path Data="M-120 -70C-120 -73.866 -116.866 -77 -113 -77H436C439.866 -77 443 -73.866 443 -70V230.068C443 233.99 437.491 234.858 436.285 231.126C406.994 140.474 297.095 105.709 220.997 163.023L140.082 223.966C66.0062 273.664 -27.2773 285.204 -111.23 255.057L-119.49 252.091C-119.796 251.981 -120 251.691 -120 251.365V-70Z"
+                     Fill="#2F80ED" StrokeThickness="0"/>
+            </Grid>
+            <Grid HorizontalOptions="FillAndExpand" Margin="0,-30,0,0">
+                <Path Data="M44.5687 -112.381C46.5017 -115.729 50.7828 -116.876 54.1308 -114.943L613.929 208.256C617.278 210.189 618.425 214.471 616.492 217.819L442.849 518.577C440.557 522.546 434.474 520.222 435.412 515.736V515.736C458.084 407.346 368.005 308.553 257.987 321.148L138.654 334.81V334.81C34.5589 341.031 -66.439 298.126 -134.229 218.885L-141.246 210.682C-141.499 210.387 -141.538 209.965 -141.343 209.628L44.5687 -112.381Z"
+                      Fill="#2F80ED" Opacity="0.5" StrokeThickness="0"/>
+            </Grid>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="End" Margin="0,0,0,-190">
+                <Path Data="M458.043 381.5C457.765 385.356 454.414 388.256 450.558 387.978L-97.022 348.52C-100.878 348.243 -103.779 344.891 -103.501 341.035L-81.9341 41.7432C-81.6523 37.8319 -76.0951 37.3621 -75.1607 41.1706C-52.4609 133.694 54.6555 176.268 134.676 124.571L219.762 69.6008C297.218 25.3559 391.09 20.55 472.659 56.6533L480.684 60.2052C480.981 60.3368 481.164 60.6409 481.141 60.9653L458.043 381.5Z"
+                      Fill="#2F80ED" StrokeThickness="0"/>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

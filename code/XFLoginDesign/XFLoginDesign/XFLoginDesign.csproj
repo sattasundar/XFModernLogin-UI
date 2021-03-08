@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+    <PackageReference Include="Sharpnado.Shadows" Version="1.2.0" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Assets\" />
+    <Folder Include="Views\" />
+    <Folder Include="Common\Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Common\Assets\applogo.png" />
+    <None Remove="Common\Assets\google.svg" />
+    <None Remove="Common\Assets\fb.svg" />
+    <None Remove="Common\Assets\apple.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SharedImage Include="Common\Assets\applogo.png" />
+    <SharedImage Include="Common\Assets\google.svg" />
+    <SharedImage Include="Common\Assets\fb.svg" />
+    <SharedImage Include="Common\Assets\apple.svg" />
+  </ItemGroup>
+</Project>

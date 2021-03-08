@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFLoginDesign.Views.LoginPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:style="clr-namespace:XFLoginDesign.Common.Styles"
+    xmlns:sharpnado="http://sharpnado.com"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    NavigationPage.HasNavigationBar="False"
+    ios:Page.UseSafeArea="True">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+            <style:BackgroudView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
+                  Margin="20,190,0,0">
+                <Label Text="Login" TextColor="#2F80ED"
+                       FontSize="32" FontAttributes="Bold"/>
+                <StackLayout Margin="0,70,70,0">
+                    <Label Text="Email" TextColor="#2F80ED"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Frame BorderColor="#2F80ED"
+                           CornerRadius="10"
+                           HeightRequest="50"
+                           HasShadow="False"
+                           Padding="5,0,5,0">
+                        <Entry x:Name="EntryEmail"
+                               TextColor="Black">
+                            <Entry.Effects>
+                                <xct:RemoveBorderEffect/>
+                            </Entry.Effects>
+                        </Entry>
+                    </Frame>
+                    <Label Text="Password" TextColor="#2F80ED"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Frame BorderColor="#2F80ED"
+                           CornerRadius="10"
+                           HeightRequest="50"
+                           HasShadow="False"
+                           Padding="5,0,5,0">
+                        <Entry x:Name="EntryPassword"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="Black">
+                            <Entry.Effects>
+                                <xct:RemoveBorderEffect/>
+                            </Entry.Effects>
+                        </Entry>
+                    </Frame>
+                    <Label Text="Foorgot Password?" FontAttributes="Bold"
+                           TextColor="#2F80ED"
+                           HorizontalOptions="EndAndExpand"/>
+                    <Grid ColumnDefinitions="*,*,*" Padding="0,20,150,0">
+                        <sharpnado:Shadows Grid.Column="0"
+                                          Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
+                           <ImageButton Source="google.svg" HeightRequest="45" WidthRequest="40"
+                                        Padding="10" Aspect="AspectFit" BackgroundColor="White"
+                                        CornerRadius="5"/>
+                        </sharpnado:Shadows>
+                        <sharpnado:Shadows Grid.Column="1"
+                                           Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
+                           <ImageButton Source="fb.svg" HeightRequest="45" WidthRequest="40"
+                                        Padding="10" Aspect="AspectFit" BackgroundColor="White"
+                                        CornerRadius="5"/>
+                        </sharpnado:Shadows>
+                        <sharpnado:Shadows Grid.Column="2"
+                                           Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
+                           <ImageButton Source="apple.svg" HeightRequest="45" WidthRequest="40"
+                                        Padding="10" Aspect="AspectFit" BackgroundColor="White"
+                                        CornerRadius="5"/>
+                        </sharpnado:Shadows>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+            <Label HorizontalOptions="StartAndExpand"
+                   VerticalOptions="End"
+                   TextColor="White"
+                   Margin="20,0,0,20">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="New Here?"/>
+                            <Span Text=" Register" FontAttributes="Bold"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnNewUserTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <sharpnado:Shadows x:Name="LoginButtonShadow"
+                               HorizontalOptions="End"
+                               VerticalOptions="End"
+                               Shades="{sharpnado:SingleShade  Color=Black, Opacity=0.2}">
+                  <Frame x:Name="LoginButton"
+                         Style="{StaticResource PrimaryButton}">
+                      <Frame.GestureRecognizers>
+                          <TapGestureRecognizer Tapped="OnLoginTapped"/>
+                      </Frame.GestureRecognizers>
+                      <Label Text="Login" HorizontalOptions="Center"
+                             VerticalOptions="Center" HorizontalTextAlignment="Center"
+                             VerticalTextAlignment="Center" TextColor="White"
+                             FontSize="24"/>
+                  </Frame>
+            </sharpnado:Shadows>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFLoginDesign.Views.GetStartedPage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:style="clr-namespace:XFLoginDesign.Common.Styles"
+    xmlns:sharpnado="http://sharpnado.com"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    NavigationPage.HasNavigationBar="False"
+    ios:Page.UseSafeArea="True">
+    <ContentPage.Content>
+         <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+            <style:BackgroudView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand"
+                  Padding="0,100,0,0">
+                <Image HorizontalOptions="Start"
+                       Source="applogo.png"
+                       Aspect="AspectFit" Margin="30,180,0,0"/>
+            </Grid>
+            <sharpnado:Shadows x:Name="GetStartedButtonShadow"
+                               HorizontalOptions="End"
+                               VerticalOptions="End"
+                               Shades="{sharpnado:SingleShade  Color=Black, Opacity=0.2}">
+                  <Frame x:Name="GetStartedButton"
+                         Style="{StaticResource PrimaryButton}">
+                      <Frame.GestureRecognizers>
+                          <TapGestureRecognizer Tapped="OnGetStartedTapped"/>
+                      </Frame.GestureRecognizers>
+                      <Label Text="Get Started" HorizontalOptions="Center"
+                             VerticalOptions="Center" HorizontalTextAlignment="Center"
+                             VerticalTextAlignment="Center" TextColor="White"
+                             FontSize="24"/>
+                     
+                  </Frame>
+            </sharpnado:Shadows>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
