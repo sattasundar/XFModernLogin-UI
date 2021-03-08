@@ -1,29 +1,28 @@
-﻿<Properties StartupConfiguration="{C9A7161E-79FE-4378-ADFB-D324794651B9}|Default">
+﻿<Properties StartupConfiguration="{7E3AE64F-E5EB-4CD0-B728-4D4786830CDE}|Default">
   <MonoDevelop.Ide.ItemProperties.XFLoginDesign.Android PreferredExecutionTarget="Android.Pixel_3a_XL_API_29" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XFLoginDesign/Views/RegisterPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XFLoginDesign/Views/LoginPage.xaml">
     <Files>
-      <File FileName="XFLoginDesign/Views/LoginPage.xaml" Line="68" Column="54" />
-      <File FileName="XFLoginDesign/Views/RegisterPage.xaml" Line="101" Column="58" />
+      <File FileName="XFLoginDesign/Views/LoginPage.xaml" Line="68" Column="59" />
       <File FileName="XFLoginDesign/Common/Styles/BackgroudView.xaml" />
       <File FileName="XFLoginDesign/MainPage.xaml" />
       <File FileName="XFLoginDesign/App.xaml" />
       <File FileName="XFLoginDesign/Views/RegisterPage.xaml.cs" Line="20" Column="15" />
+      <File FileName="XFLoginDesign.iOS/AppDelegate.cs" Line="27" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XFLoginDesign" expanded="True">
             <Node name="XFLoginDesign" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Common" expanded="True">
                 <Node name="Assets" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="RegisterPage.xaml" expanded="True">
-                  <Node name="RegisterPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="LoginPage.xaml" selected="True" />
               </Node>
             </Node>
+            <Node name="XFLoginDesign.Android" expanded="True" />
+            <Node name="XFLoginDesign.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -35,5 +34,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.XFLoginDesign.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.10F05B7E-E5B6-4BE5-BCDE-4DACCABAC815" />
+  <MonoDevelop.Ide.ItemProperties.XFLoginDesign.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.73B03BAD-5857-4109-AC28-27D901F5F005" />
 </Properties>

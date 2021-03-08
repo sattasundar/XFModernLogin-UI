@@ -28,11 +28,17 @@
     <None Remove="Common\Assets\google.svg" />
     <None Remove="Common\Assets\fb.svg" />
     <None Remove="Common\Assets\apple.svg" />
+    <None Remove="Common\Assets\ic_apple.png" />
+    <None Remove="Common\Assets\ic_fb.png" />
+    <None Remove="Common\Assets\ic_google.png" />
   </ItemGroup>
   <ItemGroup>
     <SharedImage Include="Common\Assets\applogo.png" />
     <SharedImage Include="Common\Assets\google.svg" />
     <SharedImage Include="Common\Assets\fb.svg" />
     <SharedImage Include="Common\Assets\apple.svg" />
+    <SharedImage Include="Common\Assets\ic_apple.png" />
+    <SharedImage Include="Common\Assets\ic_fb.png" />
+    <SharedImage Include="Common\Assets\ic_google.png" />
   </ItemGroup>
 </Project>

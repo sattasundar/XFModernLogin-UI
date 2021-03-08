@@ -53,19 +53,19 @@
                     <Grid ColumnDefinitions="*,*,*" Padding="0,20,150,0">
                         <sharpnado:Shadows Grid.Column="0"
                                           Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
-                           <ImageButton Source="google.svg" HeightRequest="45" WidthRequest="40"
+                           <ImageButton Source="ic_google.png" HeightRequest="45" WidthRequest="40"
                                         Padding="10" Aspect="AspectFit" BackgroundColor="White"
                                         CornerRadius="5"/>
                         </sharpnado:Shadows>
                         <sharpnado:Shadows Grid.Column="1"
                                            Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
-                           <ImageButton Source="fb.svg" HeightRequest="45" WidthRequest="40"
+                           <ImageButton Source="ic_fb.png" HeightRequest="45" WidthRequest="40"
                                         Padding="10" Aspect="AspectFit" BackgroundColor="White"
                                         CornerRadius="5"/>
                         </sharpnado:Shadows>
                         <sharpnado:Shadows Grid.Column="2"
                                            Shades="{sharpnado:SingleShade Color=Black,Offset='0,5',Opacity=0.3}">
-                           <ImageButton Source="apple.svg" HeightRequest="45" WidthRequest="40"
+                           <ImageButton Source="ic_apple.png" HeightRequest="45" WidthRequest="40"
                                         Padding="10" Aspect="AspectFit" BackgroundColor="White"
                                         CornerRadius="5"/>
                         </sharpnado:Shadows>
